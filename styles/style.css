@@ -45,6 +45,12 @@ line-height: 28px;
 letter-spacing: 0.2px;
 padding-right: 41px;
 }
+.header__social{
+  display: flex;
+}
+.header__social li{
+  padding-right: 32px;
+}
 .hesder_content{
   max-width: 770px;
   width: 100%;
@@ -80,6 +86,7 @@ border-radius: 35px;
 color: #fff;
 text-align: center;
 padding: 14px 32px;
+cursor: pointer;
 }
 /* section==== features====*/
 
@@ -136,7 +143,15 @@ text-align: center;
 .features__video{
   padding-top: 132px;
   margin-bottom: 64px;
-
+  position: relative;
+}
+.but_play{
+  position: absolute;
+  top:43%;
+  left: 43%;
+  border: none;
+  background:none;
+  
 }
 .features__video video{
   padding-bottom: 52px;
@@ -178,6 +193,14 @@ border-radius: 39px;
 padding: 19px, 39px, 19px, 39px;
 
 }
+
+input, textarea{
+  padding: 0 20px;
+}
+textarea{
+  padding-top:25px;
+}
+
 .main-feedbac{
   display: flex;
   align-items: baseline;
@@ -253,9 +276,11 @@ padding-bottom: 27px;
  align-items: center;
   text-align: center;
   width: 100%;
+  max-width: 1777px;
   background: #252B42;
   height:  1155px;
   justify-content: center;
+  margin: 0 auto;
 }
 .pricing__title h2{
   color: #fff;
@@ -276,7 +301,7 @@ line-height: 55px
   height: 700px;
 }
 .card{
-  background: #FFFFFF;
+background: #FFFFFF;
 border: 1px solid #DEDEDE;
 box-sizing: border-box;
 box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
@@ -345,8 +370,10 @@ width: 255px;
 left: 40px;
 top: 511px;
 border-radius: 35px;
-padding: 18px, 38px, 18px, 38px;
 }
+.pricing_feature li:last-child{
+padding-top: 40px;
+} 
 .card:hover{
 height: 693px;
 width: 335px;
@@ -355,6 +382,37 @@ padding: 83px, 40px, 83px, 40px;
 background: #2091F9;
 color: #fff;
 }
+.d1{
+  display:block;
+}
+.d2{
+  display: none;
+}
+  .card:hover h3 {
+  color: #fff;
+  }
+    .card:hover h5{
+      color: #fff;
+      }
+      .card:hover p{
+        color: #fff;
+        }
+        .card:hover li{
+          color: #fff;
+          }
+          .card:hover a{
+            margin-top: 40px;
+            color: #2091F9;
+            background:#fff;
+            }
+            .card:hover .d1{
+              display: none;
+            }
+            .card:hover .d2{
+              display: block;
+              width: 13px;
+              height: 28px;
+            }
 .contacts__item{
   text-align: center;
   padding: 213px 0 27px 0;
@@ -423,11 +481,12 @@ ul h5{
 }
 .footer{
   height: 567px;
-  width: 1777px;
+  max-width: 1777px;
   border-radius: 0px;
   padding: 150px, 0px, 150px, 0px;
   background: #252B42;
   width: 100%;
+  margin: 0 auto;
 }
 .footer__item{
   display: flex;
